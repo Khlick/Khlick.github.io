@@ -68,14 +68,29 @@
       {%- if test1 == "//" -%}
   <link rel="stylesheet" href="{{ include }}" />
       {%- else -%}
-  <link rel="stylesheet" href="{{ include | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="{{ include | prepend: '/assets/css/' | prepend: site.baseurl }}" />
       {% endif %}
     {% endfor %}
   {% endif %}
   {% if page.style %}
-<style>
-{{ page.style }}
-</style>
+  <style>
+  {{ page.style }}
+  </style>
   {% endif %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- Custom head includes from page.head-inject -->
+  {% if page.head-inject %}
+  {{ page.head-inject }}
+  {% endif %}
+  <!-- Injection of page.head-modules -->
+{% if page.head-modules %}
+{%   for module in page.head-modules %}
+{%     assign test1 = include | slice: 0,4 %}
+{%     if test1 == "http" %}
+  <script src="{{ module }}" type="module"></script>
+{%     else %}
+  <script src="{{ module | prepend: '/assets/js/' | prepend: site.baseurl}}" type="module"></script>
+{%     endif %}
+{%   endfor %}
+{% endif %}
 </head>

@@ -3,7 +3,7 @@
   Original Design: Spectral by HTML5 UP
     html5up.net
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  Jekyll build mod and further hacks by @arkadianriver, MIT license
+  Jekyll build mod and further hacks by @arkadianriver and @khrisgriffis, MIT license
 -->
 <html lang="en-us">
 
@@ -30,6 +30,10 @@
   
   
   <link rel="alternate" type="application/rss+xml" title="Khris Griffis, Ph.D." href="https://khrisgriffis.com/feed.xml">
+  <!-- Custom head includes from page.head-inject -->
+  
+  <!-- Injection of page.head-modules -->
+
 </head>
 
 
@@ -246,7 +250,7 @@
            ><span class="label">twitter</span></a></li>
   </ul>
   <ul class="copyright">
-    <li>&copy; 2023 Khris Griffis</li>
+    <li>&copy; 2023, 2024 Khris Griffis</li>
     <li><a href="/credits/">Credits</a></li>
   </ul>
 </footer>
@@ -261,9 +265,13 @@
 <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
 <script src="/js/main.js"></script>
 
+
+
 <script>
   MathJax = {
+    loader: {load: ['[tex]/html', '[tex]/cases']},
     tex: {
+      packages: {'[+]': ['html', 'cases']},
       inlineMath: [['$', '$'], ['\\(', '\\)']]
     },
     svg: {
@@ -272,7 +280,7 @@
   };
 </script>
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.6/tex-mml-chtml.js">
 </script>
 
   </div>

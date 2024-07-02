@@ -169,3 +169,5 @@ scholar:
   source: ./_bibliography/
   bibliography: references.bib
   bibliography_list_tag: "ul"
+  sort_by: author,year
+  order_by: descending

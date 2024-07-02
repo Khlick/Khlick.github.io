@@ -1,0 +1,44 @@
+CCSDS_OEM_VERS = 2.0
+CREATION_DATE  = 2023-04-26T22:17:13.227
+ORIGINATOR     = NASA/JSC/FOD/TOPO
+
+META_START
+OBJECT_NAME          = ISS
+OBJECT_ID            = 1998-067-A
+CENTER_NAME          = Earth
+REF_FRAME            = EME2000
+TIME_SYSTEM          = UTC
+START_TIME           = 2023-04-26T12:00:00.000
+USEABLE_START_TIME   = 2023-04-26T12:00:00.000
+USEABLE_STOP_TIME    = 2023-05-11T12:00:00.000
+STOP_TIME            = 2023-05-11T12:00:00.000
+META_STOP
+
+COMMENT Source: This file was produced by the TOPO office within FOD at JSC.
+COMMENT Units are in kg and m^2
+COMMENT MASS=447206.20
+COMMENT DRAG_AREA=1964.62
+COMMENT DRAG_COEFF=1.90
+COMMENT SOLAR_RAD_AREA=0.00
+COMMENT SOLAR_RAD_COEFF=0.00
+COMMENT Orbits start at the ascending node epoch
+COMMENT ISS first asc. node: EPOCH = 2023-04-26T13:08:51.518 $ ORBIT = 3377 $ LAN(DEG) = 172.95734
+COMMENT ISS last asc. node : EPOCH = 2023-05-11T10:35:02.816 $ ORBIT = 3608 $ LAN(DEG) = 122.94503
+COMMENT Begin sequence of events
+COMMENT TRAJECTORY EVENT SUMMARY:
+COMMENT 
+COMMENT |       EVENT        |       TIG        | ORB |   DV    |   HA    |   HP    |
+COMMENT |                    |       GMT        |     |   M/S   |   KM    |   KM    |
+COMMENT |                    |                  |     |  (F/S)  |  (NM)   |  (NM)   |
+COMMENT =============================================================================
+COMMENT  GMT120 Reboost Preli  120:00:16:00.000             1.2     417.5     412.7
+COMMENT                                                    (3.9)   (225.4)   (222.8)
+COMMENT 
+COMMENT  Crew-6 Port Rel U/D   126:11:15:00.000             0.0     419.1     414.1
+COMMENT                                                    (0.0)   (226.3)   (223.6)
+COMMENT 
+COMMENT  Crew-6 Port Rel Dock  126:11:58:00.000             0.0     419.1     414.0
+COMMENT                                                    (0.0)   (226.3)   (223.5)
+COMMENT 
+COMMENT =============================================================================
+COMMENT End sequence of events

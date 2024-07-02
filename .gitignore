@@ -64,3 +64,9 @@ Temporary Items
 
 # VSCode
 .vscode/
+
+# Python
+.python312/
+
+# Secrets
+api_key.txt

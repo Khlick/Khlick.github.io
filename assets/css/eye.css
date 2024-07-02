@@ -1,0 +1,15 @@
+figcaption {
+  padding-bottom: 15px;
+  font-family: 'Lora';
+  font-style: italic;
+}
+
+.eye {
+  width: 500px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}

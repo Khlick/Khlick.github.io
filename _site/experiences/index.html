@@ -3,7 +3,7 @@
   Original Design: Spectral by HTML5 UP
     html5up.net
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  Jekyll build mod and further hacks by @arkadianriver, MIT license
+  Jekyll build mod and further hacks by @arkadianriver and @khrisgriffis, MIT license
 -->
 <html lang="en-us">
 
@@ -45,12 +45,16 @@
   </style>
   -->
   
-  <link rel="stylesheet" href="/css/materialize-trunc.css" />
+  <link rel="stylesheet" href="/assets/css//css/materialize-trunc.css" />
       
     
   
   
   <link rel="alternate" type="application/rss+xml" title="Khris Griffis, Ph.D." href="https://khrisgriffis.com/feed.xml">
+  <!-- Custom head includes from page.head-inject -->
+  
+  <!-- Injection of page.head-modules -->
+
 </head>
 
 
@@ -107,7 +111,69 @@
       <i class="vertical-line"></i>
       <p class="item-date">
         
-        07/2022-03/2023
+        08/2023
+        
+      </p>
+      <div class="card-panel">
+        <h3 class="card-title">
+          Adjunct Faculty - Depts. Mechanical Engineering & Kinesiology
+        </h3>
+        
+        <span class="card-subtitle">California State University, Los Angeles</span>
+        
+        <div class="card-content">
+          <p><strong>Course Design and Instruction</strong>
+Experimental Methods (Mechanical Engineering): Redesigned and taught a course on probability, statistics, and measurement uncertainty, aligning lab components with modern experimental methods across engineering disciplines. Delivered 2-hour weekly lectures and supervised 4 lab sections, each 2.3 hours per week, teaching over 50 students per semester.
+Neuroplasticity and Disease (Kinesiology): Developed and instructed a course on neuromuscular disorders and neuroplasticity, focusing on physiological mechanisms and their pathological implications. Conducted 3-hour weekly lectures, teaching over 75 students per semester.</p>
+
+<p><strong>Interdisciplinary Research and Collaboration</strong>
+Led collaborative research initiatives in the field of Spinal Plasticity and Spinal Cord Injury. Fostered partnerships with academic institutions for joint research projects.</p>
+
+<p><strong>Student Mentorship and Management</strong>
+Mentored and managed a graduate student assistant, supporting their development and coordinating their contributions to course activities. Provided guidance and support to over 125 students each semester, promoting academic and professional growth.</p>
+
+<p><strong>Curriculum Development</strong>
+Contributed to enhancing departmental curricula, promoting interdisciplinary learning and ensuring alignment with industry standards.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="item">
+      <i class="vertical-line"></i>
+      <p class="item-date">
+        
+        04/2023
+        
+      </p>
+      <div class="card-panel">
+        <h3 class="card-title">
+          Co-Founder Chief Scientific Officer
+        </h3>
+        
+        <span class="card-subtitle">Sequence Analytics, Inc.</span>
+        
+        <div class="card-content">
+          <ul>
+  <li>Spearheading the development of scientific infrastructure, driving research initiatives, and integrating cutting-edge algorithms into SeqAnalytics’ proprietary RNA sequencing pipeline.</li>
+  <li>Delivering high-impact results and managing research consulting services for gene sequencing clients, ensuring top-tier project outcomes and customer satisfaction.</li>
+  <li>Shaping the strategic scientific direction of SeqAnalytics’ consulting services, fostering collaborations and joint ventures with leading academic institutions.</li>
+  <li>Leading funding acquisition efforts and effectively communicating complex scientific concepts to stakeholders and clients, ensuring alignment and support for SeqAnalytics’ innovative projects.</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="item">
+      <i class="vertical-line"></i>
+      <p class="item-date">
+        
+        07/2022-04/2023
         
       </p>
       <div class="card-panel">
@@ -350,7 +416,7 @@ oil refineries and private residences.</li>
            ><span class="label">twitter</span></a></li>
   </ul>
   <ul class="copyright">
-    <li>&copy; 2023 Khris Griffis</li>
+    <li>&copy; 2023, 2024 Khris Griffis</li>
     <li><a href="/credits/">Credits</a></li>
   </ul>
 </footer>
@@ -365,9 +431,13 @@ oil refineries and private residences.</li>
 <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
 <script src="/js/main.js"></script>
 
+
+
 <script>
   MathJax = {
+    loader: {load: ['[tex]/html', '[tex]/cases']},
     tex: {
+      packages: {'[+]': ['html', 'cases']},
       inlineMath: [['$', '$'], ['\\(', '\\)']]
     },
     svg: {
@@ -376,7 +446,7 @@ oil refineries and private residences.</li>
   };
 </script>
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.6/tex-mml-chtml.js">
 </script>
 
     </div>

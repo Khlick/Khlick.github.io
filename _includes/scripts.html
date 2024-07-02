@@ -5,15 +5,18 @@
 <script src="{{ '/js/skel.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/util.js' | prepend: site.baseurl }}"></script>
 <!--[if lte IE 8]><script src="{{ '/js/ie/respond.min.js' | prepend: site.baseurl }}"></script><![endif]-->
-<script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>{%
-  for include in page.script-includes %}{%
-    assign test1 = include | slice: 0,2 %}{%
-    if test1 == "//" %}
-<script src="{{ include }}"></script>{%
-    else %}
-<script src="{{ include | prepend: site.baseurl }}"></script>{%
-    endif %}{%
-  endfor %}{%
+<script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
+{% if page.script-includes %}
+{%   for include in page.script-includes %}
+{%     assign test1 = include | slice: 0,4 %}
+{%     if test1 == "http" %}
+<script src="{{ include }}"></script>
+{%     else %}
+<script src="{{ include | prepend: '/assets/js/' | prepend: site.baseurl}}"></script>
+{%     endif %}
+{%   endfor %}
+{% endif %}
+{%
   if page.script %}
 <script>
 {{ page.script }}
@@ -22,7 +25,9 @@
 
 <script>
   MathJax = {
+    loader: {load: ['[tex]/html', '[tex]/cases']},
     tex: {
+      packages: {'[+]': ['html', 'cases']},
       inlineMath: [['$', '$'], ['\\(', '\\)']]
     },
     svg: {
@@ -31,5 +36,5 @@
   };
 </script>
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.6/tex-mml-chtml.js">
 </script>
