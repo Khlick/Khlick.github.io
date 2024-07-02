@@ -37,7 +37,7 @@ jobs:
           destination: ./_site
           verbose: true
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4 # Updated to v4
+        uses: actions/upload-pages-artifact@v3 # Updated to v4
 
   # Deployment job
   deploy:
